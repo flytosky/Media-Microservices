@@ -1,0 +1,11 @@
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/models/src/main/java/edu/cmu/ini/ericsson/practicum/models/ratingsService/RatingList.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/models/src/main/java/edu/cmu/ini/ericsson/practicum/models/ratingsService/Rating.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/models/src/main/java/edu/cmu/ini/ericsson/practicum/models/apiGatewayService/MovieDetails.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/models/src/main/java/edu/cmu/ini/ericsson/practicum/models/imageService/Image.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/models/src/main/java/edu/cmu/ini/ericsson/practicum/models/movieService/MovieList.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/models/src/main/java/edu/cmu/ini/ericsson/practicum/models/userService/User.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/models/src/main/java/edu/cmu/ini/ericsson/practicum/models/movieService/Movie.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/models/src/main/java/edu/cmu/ini/ericsson/practicum/models/similarMovieService/SimilarMovieList.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/models/src/main/java/edu/cmu/ini/ericsson/practicum/models/apiGatewayService/MovieDetailsList.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/models/src/main/java/edu/cmu/ini/ericsson/practicum/models/imageService/ImageList.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/models/src/main/java/edu/cmu/ini/ericsson/practicum/models/similarMovieService/SimilarMovie.java

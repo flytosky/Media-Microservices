@@ -1,0 +1,286 @@
+2016-03-01 15:21:11.615 ERROR 2053 --- [ratings_service.RatingsServiceApplication.main()] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/rating/default":Connection refused; nested exception is java.net.ConnectException: Connection refused
+2016-03-01 15:21:11.622  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56e89272: startup date [Tue Mar 01 15:21:11 PST 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@268f752b
+2016-03-01 15:21:12.264  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-03-01 15:21:12.489  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d468acc3-f4ca-3002-88bf-3ee5e4f9d39c
+2016-03-01 15:21:12.494  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-03-01 15:21:12.532  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$ConfigurationPropertiesRebinderConfiguration' of type [class org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$ConfigurationPropertiesRebinderConfiguration$$EnhancerBySpringCGLIB$$fc20c6cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-03-01 15:21:12.780  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 6060 (http)
+2016-03-01 15:21:12.993  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-03-01 15:21:12.995  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2016-03-01 15:21:13.111  INFO 2053 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-03-01 15:21:13.112  INFO 2053 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1490 ms
+2016-03-01 15:21:13.780  INFO 2053 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-03-01 15:21:13.785  INFO 2053 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-03-01 15:21:13.785  INFO 2053 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-03-01 15:21:14.193  WARN 2053 --- [ratings_service.RatingsServiceApplication.main()] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2016-03-01 15:21:14.193  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2016-03-01 15:21:14.202  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4ae99487
+2016-03-01 15:21:14.425  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56e89272: startup date [Tue Mar 01 15:21:11 PST 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@268f752b
+2016-03-01 15:21:14.499  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movie/{id}/{trace_uuid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<edu.cmu.ini.ericsson.practicum.models.ratingsService.Rating> ratings_service.controller.RatingController.getRatingForMovie(java.lang.String,java.lang.String)
+2016-03-01 15:21:14.499  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movie/latest/{n}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public edu.cmu.ini.ericsson.practicum.models.ratingsService.RatingList ratings_service.controller.RatingController.getAllRatings(java.lang.String)
+2016-03-01 15:21:14.500  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movie],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public edu.cmu.ini.ericsson.practicum.models.ratingsService.Rating ratings_service.controller.RatingController.postMovie(edu.cmu.ini.ericsson.practicum.models.ratingsService.Rating)
+2016-03-01 15:21:14.500  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movie/{id}],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public edu.cmu.ini.ericsson.practicum.models.ratingsService.Rating ratings_service.controller.RatingController.updateRating(java.lang.String,edu.cmu.ini.ericsson.practicum.models.ratingsService.Rating)
+2016-03-01 15:21:14.500  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movie/{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void ratings_service.controller.RatingController.deleteRating(java.lang.String)
+2016-03-01 15:21:14.501  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-03-01 15:21:14.502  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2016-03-01 15:21:14.533  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-01 15:21:14.534  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-01 15:21:14.572  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-01 15:21:14.728  WARN 2053 --- [ratings_service.RatingsServiceApplication.main()] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2016-03-01 15:21:14.728  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2016-03-01 15:21:14.740  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-03-01 15:21:14.749  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2016-03-01 15:21:14.751  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2016-03-01 15:21:14.752  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2016-03-01 15:21:14.755  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2016-03-01 15:21:14.768  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2016-03-01 15:21:14.779  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=56e89272,type=ConfigurationPropertiesRebinder]
+2016-03-01 15:21:14.788  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2016-03-01 15:21:14.793  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] .p.EurekaConfigBasedInstanceInfoProvider : Setting initial instance status as: STARTING
+2016-03-01 15:21:15.344  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2016-03-01 15:21:15.347  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2016-03-01 15:21:15.347  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2016-03-01 15:21:15.347  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2016-03-01 15:21:15.349  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2016-03-01 15:21:15.349  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2016-03-01 15:21:15.459  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2016-03-01 15:21:15.496  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2016-03-01 15:21:15.499  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2016-03-01 15:21:15.506  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] c.n.e.EurekaDiscoveryClientConfiguration : Registering application rating with eureka with status UP
+2016-03-01 15:21:15.592  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 6060 (http)
+2016-03-01 15:21:15.593  INFO 2053 --- [ratings_service.RatingsServiceApplication.main()] r.RatingsServiceApplication              : Started RatingsServiceApplication in 6.251 seconds (JVM running for 13.091)
+2016-03-01 15:21:45.506  INFO 2053 --- [pool-3-thread-1] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2016-03-01 15:21:45.514  INFO 2053 --- [pool-3-thread-1] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2016-03-01 15:21:45.514  INFO 2053 --- [pool-3-thread-1] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2016-03-01 15:21:45.514  INFO 2053 --- [pool-3-thread-1] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2016-03-01 15:21:45.514  INFO 2053 --- [pool-3-thread-1] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2016-03-01 15:21:45.514  INFO 2053 --- [pool-3-thread-1] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2016-03-01 15:21:45.520  INFO 2053 --- [pool-3-thread-1] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2016-03-01 15:21:45.527  INFO 2053 --- [pool-2-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060 - Re-registering apps/RATING
+2016-03-01 15:21:45.528  INFO 2053 --- [pool-2-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060: registering service...
+2016-03-01 15:21:45.540  INFO 2053 --- [pool-3-thread-1] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2016-03-01 15:21:45.604  INFO 2053 --- [pool-2-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060 - registration status: 204
+2016-03-01 15:21:55.507  INFO 2053 --- [DiscoveryClient-2] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060 - retransmit instance info with status UP
+2016-03-01 15:21:55.514  INFO 2053 --- [DiscoveryClient-2] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060: registering service...
+2016-03-01 15:21:55.524  INFO 2053 --- [DiscoveryClient-2] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060 - registration status: 204
+2016-03-01 15:22:15.625  INFO 2053 --- [pool-2-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060 - Re-registering apps/RATING
+2016-03-01 15:22:15.625  INFO 2053 --- [pool-2-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060: registering service...
+2016-03-01 15:22:15.637  INFO 2053 --- [pool-2-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060 - registration status: 204
+2016-03-01 15:23:22.242  INFO 2053 --- [http-nio-6060-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-03-01 15:23:22.243  INFO 2053 --- [http-nio-6060-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-03-01 15:23:22.259  INFO 2053 --- [http-nio-6060-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2016-03-01 17:24:14.165  INFO 2053 --- [pool-2-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060 - Re-registering apps/RATING
+2016-03-01 17:24:14.188  INFO 2053 --- [pool-2-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060: registering service...
+2016-03-01 17:24:14.204  INFO 2053 --- [pool-2-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060 - registration status: 204
+2016-03-01 17:28:19.305  INFO 2053 --- [Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@268f752b: startup date [Tue Mar 01 15:21:09 PST 2016]; root of context hierarchy
+2016-03-01 17:28:19.334  INFO 2053 --- [Thread-1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@56e89272: startup date [Tue Mar 01 15:21:11 PST 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@268f752b
+2016-03-01 17:28:19.418  INFO 2053 --- [Thread-1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2016-03-01 17:28:19.428  INFO 2053 --- [Thread-1] c.n.e.EurekaDiscoveryClientConfiguration : Unregistering application rating with eureka with status DOWN
+2016-03-01 17:28:19.446  INFO 2053 --- [Thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2016-03-01 17:28:19.447  INFO 2053 --- [Thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2016-03-01 17:28:19.453  INFO 2053 --- [Thread-1] c.n.e.EurekaDiscoveryClientConfiguration : Closing DiscoveryClient.jerseyClient
+2016-03-01 17:28:19.459  INFO 2053 --- [Thread-1] c.n.e.EurekaDiscoveryClientConfiguration : Removing application rating from eureka
+2016-03-01 17:28:19.506 ERROR 2053 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Can't get a response from http://localhost:8761/eureka/apps/RATING/localhost:rating:6060
+Can't contact any eureka nodes - possibly a security group issue?
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:28)
+	at com.sun.jersey.api.client.Client.handle(Client.java:648)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680)
+	at com.sun.jersey.api.client.WebResource.delete(WebResource.java:272)
+	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1134)
+	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1060)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:694)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:684)
+	at com.netflix.discovery.DiscoveryManager.shutdownComponent(DiscoveryManager.java:94)
+	at org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration.close(EurekaDiscoveryClientConfiguration.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:349)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:314)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:153)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:239)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:900)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:907)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:884)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:150)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:836)
+	at org.springframework.boot.builder.ParentContextCloserApplicationListener$ContextCloserListener.onApplicationEvent(ParentContextCloserApplicationListener.java:102)
+	at org.springframework.boot.builder.ParentContextCloserApplicationListener$ContextCloserListener.onApplicationEvent(ParentContextCloserApplicationListener.java:86)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:151)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:128)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:804)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:115)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:170)
+	... 35 common frames omitted
+
+2016-03-01 17:28:19.511 ERROR 2053 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060 - de-registration failedjava.net.ConnectException: Connection refused
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:184)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:120)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:28)
+	at com.sun.jersey.api.client.Client.handle(Client.java:648)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:680)
+	at com.sun.jersey.api.client.WebResource.delete(WebResource.java:272)
+	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1134)
+	at com.netflix.discovery.DiscoveryClient.makeRemoteCall(DiscoveryClient.java:1060)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:694)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:684)
+	at com.netflix.discovery.DiscoveryManager.shutdownComponent(DiscoveryManager.java:94)
+	at org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration.close(EurekaDiscoveryClientConfiguration.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:349)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:314)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:153)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:239)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:900)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:907)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:884)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:150)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:836)
+	at org.springframework.boot.builder.ParentContextCloserApplicationListener$ContextCloserListener.onApplicationEvent(ParentContextCloserApplicationListener.java:102)
+	at org.springframework.boot.builder.ParentContextCloserApplicationListener$ContextCloserListener.onApplicationEvent(ParentContextCloserApplicationListener.java:86)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:151)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:128)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:804)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:115)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:170)
+	... 35 common frames omitted
+
+2016-03-01 22:54:30.912 ERROR 3522 --- [ratings_service.RatingsServiceApplication.main()] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/rating/default":Connection refused; nested exception is java.net.ConnectException: Connection refused
+2016-03-01 22:54:30.922  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24094c3e: startup date [Tue Mar 01 22:54:30 PST 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@17c0d20
+2016-03-01 22:54:31.619  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-03-01 22:54:31.870  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d468acc3-f4ca-3002-88bf-3ee5e4f9d39c
+2016-03-01 22:54:31.872  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-03-01 22:54:31.914  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$ConfigurationPropertiesRebinderConfiguration' of type [class org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$ConfigurationPropertiesRebinderConfiguration$$EnhancerBySpringCGLIB$$cecde7b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-03-01 22:54:32.338  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 6060 (http)
+2016-03-01 22:54:32.716  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-03-01 22:54:32.719  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.23
+2016-03-01 22:54:32.906  INFO 3522 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-03-01 22:54:32.907  INFO 3522 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1985 ms
+2016-03-01 22:54:33.774  INFO 3522 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-03-01 22:54:33.779  INFO 3522 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-03-01 22:54:33.779  INFO 3522 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-03-01 22:54:34.200  WARN 3522 --- [ratings_service.RatingsServiceApplication.main()] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2016-03-01 22:54:34.200  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2016-03-01 22:54:34.207  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5c33cab0
+2016-03-01 22:54:34.437  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24094c3e: startup date [Tue Mar 01 22:54:30 PST 2016]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@17c0d20
+2016-03-01 22:54:34.495  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movie/{id}/{trace_uuid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<edu.cmu.ini.ericsson.practicum.models.ratingsService.Rating> ratings_service.controller.RatingController.getRatingForMovie(java.lang.String,java.lang.String)
+2016-03-01 22:54:34.495  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movie/latest/{n}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public edu.cmu.ini.ericsson.practicum.models.ratingsService.RatingList ratings_service.controller.RatingController.getAllRatings(java.lang.String)
+2016-03-01 22:54:34.495  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movie],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public edu.cmu.ini.ericsson.practicum.models.ratingsService.Rating ratings_service.controller.RatingController.postMovie(edu.cmu.ini.ericsson.practicum.models.ratingsService.Rating)
+2016-03-01 22:54:34.496  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movie/{id}],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public edu.cmu.ini.ericsson.practicum.models.ratingsService.Rating ratings_service.controller.RatingController.updateRating(java.lang.String,edu.cmu.ini.ericsson.practicum.models.ratingsService.Rating)
+2016-03-01 22:54:34.496  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/movie/{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void ratings_service.controller.RatingController.deleteRating(java.lang.String)
+2016-03-01 22:54:34.501  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-03-01 22:54:34.502  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2016-03-01 22:54:34.533  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-01 22:54:34.533  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-01 22:54:34.573  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-01 22:54:34.710  WARN 3522 --- [ratings_service.RatingsServiceApplication.main()] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2016-03-01 22:54:34.711  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2016-03-01 22:54:34.729  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-03-01 22:54:34.734  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2016-03-01 22:54:34.735  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2016-03-01 22:54:34.736  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2016-03-01 22:54:34.740  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2016-03-01 22:54:34.752  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2016-03-01 22:54:34.759  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=24094c3e,type=ConfigurationPropertiesRebinder]
+2016-03-01 22:54:34.769  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2016-03-01 22:54:34.786  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] .p.EurekaConfigBasedInstanceInfoProvider : Setting initial instance status as: STARTING
+2016-03-01 22:54:35.342  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2016-03-01 22:54:35.343  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2016-03-01 22:54:35.343  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2016-03-01 22:54:35.344  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2016-03-01 22:54:35.344  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2016-03-01 22:54:35.344  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2016-03-01 22:54:35.475  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2016-03-01 22:54:35.529  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2016-03-01 22:54:35.532  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2016-03-01 22:54:35.544  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] c.n.e.EurekaDiscoveryClientConfiguration : Registering application rating with eureka with status UP
+2016-03-01 22:54:35.614  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 6060 (http)
+2016-03-01 22:54:35.615  INFO 3522 --- [ratings_service.RatingsServiceApplication.main()] r.RatingsServiceApplication              : Started RatingsServiceApplication in 6.497 seconds (JVM running for 11.847)
+2016-03-01 22:55:05.574  INFO 3522 --- [pool-2-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060 - Re-registering apps/RATING
+2016-03-01 22:55:05.574  INFO 3522 --- [pool-2-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060: registering service...
+2016-03-01 22:55:05.597  INFO 3522 --- [pool-2-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060 - registration status: 204
+2016-03-01 22:55:15.546  INFO 3522 --- [DiscoveryClient-2] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060 - retransmit instance info with status UP
+2016-03-01 22:55:15.554  INFO 3522 --- [DiscoveryClient-2] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060: registering service...
+2016-03-01 22:55:15.563  INFO 3522 --- [DiscoveryClient-2] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060 - registration status: 204
+2016-03-01 22:55:35.608  INFO 3522 --- [pool-2-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060 - Re-registering apps/RATING
+2016-03-01 22:55:35.609  INFO 3522 --- [pool-2-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060: registering service...
+2016-03-01 22:55:35.614  INFO 3522 --- [pool-2-thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_RATING/localhost:rating:6060 - registration status: 204
+2016-03-01 22:56:38.790  INFO 3522 --- [http-nio-6060-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-03-01 22:56:38.891  INFO 3522 --- [http-nio-6060-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-03-01 22:56:39.339  INFO 3522 --- [http-nio-6060-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 444 ms
+2016-03-01 22:56:39.577  INFO 3522 --- [http-nio-6060-exec-1] r.controller.RatingController            : EricssonTrace:[traceID=e057655d-267e-4be2-b20a-eddc8c253191] [endpoint=ratings_service/movie/1] [timestamp=1456901799577] [S_at=ratings_service] [S_out=null]
+2016-03-01 22:58:01.389  INFO 3522 --- [http-nio-6060-exec-3] r.controller.RatingController            : EricssonTrace:[traceID=a9819387-a849-4d4f-b3aa-a8740076627d] [endpoint=ratings_service/movie/1] [timestamp=1456901881388] [S_at=ratings_service] [S_out=null]
+2016-03-01 22:58:01.572  INFO 3522 --- [http-nio-6060-exec-4] r.controller.RatingController            : EricssonTrace:[traceID=88c4046b-b4fd-4b81-981b-5e453e237bef] [endpoint=ratings_service/movie/1] [timestamp=1456901881571] [S_at=ratings_service] [S_out=null]
+2016-03-01 22:58:59.614  INFO 3522 --- [http-nio-6060-exec-7] r.controller.RatingController            : EricssonTrace:[traceID=2efc4f18-960b-4d61-b6d4-8be6e81517a1] [endpoint=ratings_service/movie/1] [timestamp=1456901939614] [S_at=ratings_service] [S_out=null]
+2016-03-01 22:59:07.157  INFO 3522 --- [http-nio-6060-exec-8] r.controller.RatingController            : EricssonTrace:[traceID=36963dee-e405-4c34-83e0-b1df9b4ce20c] [endpoint=ratings_service/movie/1] [timestamp=1456901947157] [S_at=ratings_service] [S_out=null]
+2016-03-01 23:02:20.551  INFO 3522 --- [http-nio-6060-exec-10] r.controller.RatingController            : EricssonTrace:[traceID=84f1c51e-f8fc-4f5c-933c-f2bb5e9499e1] [endpoint=ratings_service/movie/1] [timestamp=1456902140551] [S_at=ratings_service] [S_out=null]
+2016-03-01 23:02:21.629  INFO 3522 --- [http-nio-6060-exec-1] r.controller.RatingController            : EricssonTrace:[traceID=b7ab62b1-c99e-48bc-8f93-f44ccac4dded] [endpoint=ratings_service/movie/1] [timestamp=1456902141629] [S_at=ratings_service] [S_out=null]
+2016-03-01 23:02:21.975  INFO 3522 --- [http-nio-6060-exec-2] r.controller.RatingController            : EricssonTrace:[traceID=95830288-d9e5-402f-8a30-dc75cd76b36b] [endpoint=ratings_service/movie/3] [timestamp=1456902141975] [S_at=ratings_service] [S_out=null]
+2016-03-01 23:05:20.516  INFO 3522 --- [http-nio-6060-exec-4] r.controller.RatingController            : EricssonTrace:[traceID=c5719a15-d614-45ea-9b05-48ddcdeccb38] [endpoint=ratings_service/movie/1] [timestamp=1456902320516] [S_at=ratings_service] [S_out=null]
+2016-03-01 23:05:21.774  INFO 3522 --- [http-nio-6060-exec-6] r.controller.RatingController            : EricssonTrace:[traceID=3c70a410-9257-42b9-9fd5-55a33633a36d] [endpoint=ratings_service/movie/1] [timestamp=1456902321774] [S_at=ratings_service] [S_out=null]
+2016-03-01 23:08:10.759  INFO 3522 --- [http-nio-6060-exec-7] r.controller.RatingController            : EricssonTrace:[traceID=25b112b0-b51d-4163-b9ba-f1d1928dfbb6] [endpoint=ratings_service/movie/1] [timestamp=1456902490759] [S_at=ratings_service] [S_out=null]
+2016-03-01 23:59:00.250  INFO 3522 --- [http-nio-6060-exec-9] r.controller.RatingController            : EricssonTrace:[traceID=4f5bb457-9113-46dd-a592-b55f6f88405f] [endpoint=ratings_service/movie/1] [timestamp=1456905540249] [S_at=ratings_service] [S_out=null]
+2016-03-01 23:59:07.741  INFO 3522 --- [http-nio-6060-exec-10] r.controller.RatingController            : EricssonTrace:[traceID=a137ad5d-4875-4e50-8222-9a33691bcf1f] [endpoint=ratings_service/movie/2] [timestamp=1456905547741] [S_at=ratings_service] [S_out=null]
+2016-03-02 00:13:26.238  INFO 3522 --- [http-nio-6060-exec-2] r.controller.RatingController            : EricssonTrace:[traceID=6df89694-6adb-4d12-9b74-a007600816ef] [endpoint=ratings_service/movie/3] [timestamp=1456906406237] [S_at=ratings_service] [S_out=null]
+2016-03-02 00:13:36.932  INFO 3522 --- [http-nio-6060-exec-3] r.controller.RatingController            : EricssonTrace:[traceID=6a782bd2-de97-4225-b45a-86b3506bedac] [endpoint=ratings_service/movie/1] [timestamp=1456906416932] [S_at=ratings_service] [S_out=null]
+2016-03-02 00:15:36.150  INFO 3522 --- [http-nio-6060-exec-6] r.controller.RatingController            : EricssonTrace:[traceID=b281f070-b029-48a9-a243-8ac371bdc4af] [endpoint=ratings_service/movie/13] [timestamp=1456906536150] [S_at=ratings_service] [S_out=null]
+2016-03-02 00:39:06.000  INFO 3522 --- [http-nio-6060-exec-7] r.controller.RatingController            : EricssonTrace:[traceID=994317d5-81b0-4176-9ebf-f91feaaa00fb] [endpoint=ratings_service/movie/1] [timestamp=1456907945999] [S_at=ratings_service] [S_out=null]
+2016-03-02 00:39:06.128  INFO 3522 --- [http-nio-6060-exec-8] r.controller.RatingController            : EricssonTrace:[traceID=1dafe7c8-6742-4c9b-9d8b-0d4bbb3cb398] [endpoint=ratings_service/movie/1] [timestamp=1456907946128] [S_at=ratings_service] [S_out=null]
+2016-03-02 00:45:31.625  INFO 3522 --- [http-nio-6060-exec-1] r.controller.RatingController            : EricssonTrace:[traceID=70e03129-dfa8-442c-8f78-3677f4443cff] [endpoint=ratings_service/movie/1] [timestamp=1456908331625] [S_at=ratings_service] [S_out=null]
+2016-03-02 00:45:32.879  INFO 3522 --- [http-nio-6060-exec-2] r.controller.RatingController            : EricssonTrace:[traceID=7698cec0-8b83-405d-802d-5eb5d60e4446] [endpoint=ratings_service/movie/1] [timestamp=1456908332879] [S_at=ratings_service] [S_out=null]
+2016-03-02 00:48:16.648  INFO 3522 --- [http-nio-6060-exec-7] r.controller.RatingController            : EricssonTrace:[traceID=6e1ebdc1-efd8-4daa-b392-4ace0ee38caf] [endpoint=ratings_service/movie/1] [timestamp=1456908496647] [S_at=ratings_service] [S_out=null]
+2016-03-02 02:03:22.126  INFO 3522 --- [http-nio-6060-exec-3] r.controller.RatingController            : EricssonTrace:[traceID=e3684635-b310-4667-bdec-dbfbe3efe5ad] [endpoint=ratings_service/movie/1] [timestamp=1456913002125] [S_at=ratings_service] [S_out=null]
+2016-03-02 02:03:22.217  INFO 3522 --- [http-nio-6060-exec-4] r.controller.RatingController            : EricssonTrace:[traceID=e57138de-de51-42bb-85a8-008f4ab1c3ba] [endpoint=ratings_service/movie/1] [timestamp=1456913002217] [S_at=ratings_service] [S_out=null]
+2016-03-02 02:03:31.259  INFO 3522 --- [http-nio-6060-exec-6] r.controller.RatingController            : EricssonTrace:[traceID=a47ad05b-dcf3-45d0-8f19-d8350355dec9] [endpoint=ratings_service/movie/1] [timestamp=1456913011259] [S_at=ratings_service] [S_out=null]

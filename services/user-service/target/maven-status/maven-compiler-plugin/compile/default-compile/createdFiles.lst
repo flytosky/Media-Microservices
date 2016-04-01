@@ -1,0 +1,3 @@
+user_service/controller/UserController.class
+user_service/domain/UserRepository.class
+user_service/UserServiceApplication.class

@@ -1,0 +1,4 @@
+search/controller/MovieSearchController.class
+search/domain/MovieSearchRepository.class
+search/SearchServiceApplication.class
+search/domain/MovieSearch.class

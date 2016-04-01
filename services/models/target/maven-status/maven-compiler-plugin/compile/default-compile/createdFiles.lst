@@ -1,0 +1,11 @@
+edu/cmu/ini/ericsson/practicum/models/apiGatewayService/MovieDetails.class
+edu/cmu/ini/ericsson/practicum/models/apiGatewayService/MovieDetailsList.class
+edu/cmu/ini/ericsson/practicum/models/userService/User.class
+edu/cmu/ini/ericsson/practicum/models/movieService/MovieList.class
+edu/cmu/ini/ericsson/practicum/models/similarMovieService/SimilarMovie.class
+edu/cmu/ini/ericsson/practicum/models/imageService/Image.class
+edu/cmu/ini/ericsson/practicum/models/ratingsService/Rating.class
+edu/cmu/ini/ericsson/practicum/models/ratingsService/RatingList.class
+edu/cmu/ini/ericsson/practicum/models/similarMovieService/SimilarMovieList.class
+edu/cmu/ini/ericsson/practicum/models/movieService/Movie.class
+edu/cmu/ini/ericsson/practicum/models/imageService/ImageList.class

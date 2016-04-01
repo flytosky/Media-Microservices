@@ -1,0 +1,7 @@
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/api-gateway/src/main/java/api_gateway/services/user/UserIntegrationService.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/api-gateway/src/main/java/api_gateway/controller/GatewayController.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/api-gateway/src/main/java/api_gateway/ApiGatewayApplication.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/api-gateway/src/main/java/api_gateway/Utils.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/api-gateway/src/main/java/api_gateway/services/ratings/RatingIntegrationService.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/api-gateway/src/main/java/api_gateway/services/similar_movie/SimilarMovieIntegrationService.java
+/Users/weiwang/Ericsson-Cloud-INI-Practicum-Fall2015/services/api-gateway/src/main/java/api_gateway/services/movie/MovieIntegrationService.java

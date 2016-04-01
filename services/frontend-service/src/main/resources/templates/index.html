@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<link rel="stylesheet" href="/css/bootstrap.css"/>
+	<link rel="stylesheet" href="/css/bootstrap-theme.css"/>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Netflix-Mock</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Movies</a></li>
+          </ul>
+          <div class="col-sm-3 col-md-3">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+           </div> 
+           <ul class="nav navbar-nav navbar-right">
+		        <li><p th:text="'current user:' +${user.name}" style="color:white"></p></li>
+		   </ul>   
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div style="padding-top: 100px;" class="container theme-showcase" role="main">
+
+	<div class="row">
+	    <div th:each="movie : ${movies}">	
+		  <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img style="height: 200px; width: 200px; display: block;" th:src="${movie.movie.poster}"/>
+		      <div class="caption">
+		        <!--<h3 th:text="${movie.movie.title}"></h3> -->
+				<div th:each="rating,iterationStatus : ${movie.ratings}">
+					<p th:text="'User '+ ${rating.userId} + ' rates this movie ' +${rating.rating}"></p>
+				</div>
+				<p th:text = "'Similar Movies: ' + ${movie.similars.firstChoice} + ' '
+								+ ${movie.similars.secondChoice} + ' '
+								+ ${movie.similars.thirdChoice} "></p>
+		      </div>
+		    </div>
+		  </div>
+	    </div>
+	</div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="/js/bootstrap.js"></script>
+</body>
+</html>
